@@ -17,11 +17,11 @@ import Products from "./details/Products";
 const Home = () => {
   const settings = {
     dots: true,
-    infinite: false,
-    // speed: 500,
+    infinite: true,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
   };
 
@@ -55,86 +55,8 @@ const Home = () => {
     <>
       <Header />
       <Slider {...settings} className="banner-carousel banner-carousel-1 mb-0">
-        <img src={sliderPic2} alt="Slide 1" />
+        <img src={sliderPic2} style={{ height: "500px" }} alt="Slide 1" />
         <img src={sliderPic3} alt="Slide 2" />
-
-        {/* Slider # 1 */}
-        <div
-          className="banner-carousel-item"
-          style={{ backgroundImage: `url(${sliderPic2})` }}
-        >
-          <div className="slider-content">
-            <div className="container h-100">
-              <div className="row align-items-center h-100">
-                <div className="col-md-12 text-center">
-                  <h3
-                    className="slide-title"
-                    data-animation-in="fadeIn"
-                    style={{ fontSize: "28px", fontWeight: "bolder" }}
-                  >
-                    Welcome to Absolute Solutions - Best IT Company in Riyadh
-                  </h3>
-                  <p
-                    data-animation-in="slideInRight"
-                    style={{
-                      fontSize: "20px",
-                      lineHeight: "28px",
-                      textAlign: "justify",
-                    }}
-                    className="text-center"
-                  >
-                    Absolute Solutions is a next-generation professional
-                    services company creating exceptional value at the
-                    intersection of business, technology, and humanity. We drive
-                    innovation, empower transformation, and foster sustainable
-                    growth.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Slider # 2 */}
-        <div
-          className="banner-carousel-item"
-          style={{
-            backgroundImage: `url(${sliderPic3})`,
-            position: "relative",
-          }}
-        >
-          <div className="slider-content text-left">
-            <div className="container h-100">
-              <div className="row align-items-center h-100">
-                <div className="col-md-12 text-center">
-                  <h3
-                    className="slide-title"
-                    data-animation-in="fadeIn"
-                    style={{ fontSize: "28px", fontWeight: "bolder" }}
-                  >
-                    One Stop Shop Technology Partners
-                  </h3>
-                  <p
-                    data-animation-in="slideInRight"
-                    style={{
-                      fontSize: "20px",
-                      lineHeight: "28px",
-                      textAlign: "justify",
-                    }}
-                    className="text-center"
-                  >
-                    With over 18 years of experience in business application
-                    development, Absolute Solution strives to provide businesses
-                    with an intelligent and high-performing solution. Our
-                    bespoke apps improve your brand’s awareness and increase its
-                    reach to more potential customers.{" "}
-                    <strong>DMS, CMS, Visage...</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </Slider>
 
       <section id="ts-features" className="ts-features">

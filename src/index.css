@@ -2520,11 +2520,12 @@ img.testimonial-thumb {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: -13px;
+  /* margin-left: -13px; */
 }
 
 .footer-social ul li {
   display: inline-block;
+  margin-left: 30px
 }
 
 .footer-social ul li a i {

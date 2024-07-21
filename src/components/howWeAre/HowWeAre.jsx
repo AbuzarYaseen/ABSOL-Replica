@@ -6,7 +6,7 @@ const HowWeAre = () => {
   return (
     <>
       <Header />
-      <div>this is how we are</div>;
+      <div style={{ padding: "30px" }}></div>;
       <Footer />
     </>
   );

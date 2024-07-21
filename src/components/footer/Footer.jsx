@@ -1,8 +1,10 @@
 import React from "react";
 import footerLogo from "../../assets/footer-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-<FontAwesomeIcon icon="fa-brands fa-youtube" />;
+import youtube from "../../assets/youtube.svg";
+import fb from "../../assets/fb.svg";
+import insta from "../../assets/insta.svg";
+import linkedIn from "../../assets/linkedIn.svg";
 
 const Footer = () => {
   return (
@@ -12,7 +14,6 @@ const Footer = () => {
           <div className="row justify-content-between">
             <div className="col-lg-4 col-md-6 footer-widget footer-about">
               <h3 className="widget-title">About Us</h3>
-              <FontAwesomeIcon icon={faEnvelope} />
 
               <img
                 loading="lazy"
@@ -27,7 +28,6 @@ const Footer = () => {
                 transformation.
               </p>
               <div className="footer-social">
-                {/* <FontAwesomeIcon icon={faYoutube} /> */}
                 <ul>
                   <li>
                     <a
@@ -36,10 +36,7 @@ const Footer = () => {
                       rel="noopener noreferrer"
                       aria-label="Facebook"
                     >
-                      <i
-                        className="fab fa-facebook-f"
-                        style={{ color: "#fff", fontSize: "30px" }}
-                      ></i>
+                      <img src={fb} style={{ width: "15px" }} />
                     </a>
                   </li>
                   <li>
@@ -49,10 +46,7 @@ const Footer = () => {
                       rel="noopener noreferrer"
                       aria-label="YouTube"
                     >
-                      <i
-                        className="fab fa-youtube"
-                        style={{ color: "#fff", fontSize: "30px" }}
-                      ></i>
+                      <img src={youtube} style={{ width: "30px" }} />
                     </a>
                   </li>
                   <li>
@@ -62,10 +56,7 @@ const Footer = () => {
                       rel="noopener noreferrer"
                       aria-label="Instagram"
                     >
-                      <i
-                        className="fab fa-instagram"
-                        style={{ color: "#fff", fontSize: "30px" }}
-                      ></i>
+                      <img src={insta} style={{ width: "25px" }} />
                     </a>
                   </li>
                   <li>
@@ -75,10 +66,7 @@ const Footer = () => {
                       rel="noopener noreferrer"
                       aria-label="LinkedIn"
                     >
-                      <i
-                        className="fab fa-linkedin"
-                        style={{ color: "#fff", fontSize: "30px" }}
-                      ></i>
+                      <img src={linkedIn} style={{ width: "25px" }} />
                     </a>
                   </li>
                 </ul>
